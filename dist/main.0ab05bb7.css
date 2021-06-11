@@ -1,0 +1,1015 @@
+@import url("https://use.typekit.net/lnc5nkb.css");
+.donationsContainer .donations .donationInfo p, .donationsContainer .donations .donationForm .form-control label, .donationsContainer .donations .contact .contactList a, .donationsContainer .footInfo, .adoptionExperience .adoptionTitle .viewOurStory .story p, .adoptionPage .adoptionInfo p, .adoptionPage .rescuePet .info p, .landpage .left .nav-links a, .landpage .left .info p, .darkgrey-btn, .yellowBtn {
+  font-family: soleil, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.landpage .right-top .padding .title, .landpage .right-top .padding .read-more, .landpage .right-top .padding .peta, .landpage .right-bottom .title, .landpage .right-bottom .donate {
+  font-family: soleil, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.donationsContainer .donations .donationForm h2, .adoptionExperience .adoptionTitle .viewOurStory .story h2, .adoptionExperience .adoptionTitle .viewOurStory .story h4, .adoptionPage .adoptionInfo h2, .adoptionPage .rescuePet .info h2 {
+  font-family: soleil, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.adoptionExperience h4, .adoptionPage h4 {
+  font-family: soleil, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.donationsContainer .donations .donationInfo h1, .adoptionExperience .adoptionTitle h1, .adoptionPage .adoptionInfo h1, .landpage .left .info h1 {
+  font-family: latino-urw, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.darkgrey-btn {
+  color: #fff;
+  background-color: #757168;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 25px 5px 25px;
+  font-size: 16px;
+}
+
+.yellowBtn {
+  color: #fff;
+  background-color: #F1B74B;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 0px;
+  display: inline-block;
+  width: 100%;
+  border: none;
+}
+
+.darkgrey-btn:hover {
+  background-color: #D87651;
+}
+
+.yellowBtn:hover {
+  background-color: #D87651;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(300px, 1200px) minmax(1em, 1fr);
+  padding: 3rem 0px 0px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landpage {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.75fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.landpage .left {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(13, 1fr);
+  padding: 1.5rem;
+}
+.landpage .left .burger {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+.landpage .left .burger .line2 {
+  width: 15px;
+  height: 2.5px;
+  background-color: #757168;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.landpage .left .burger .line1 {
+  width: 22px;
+  height: 2.5px;
+  background-color: #757168;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.landpage .left .burger .line3 {
+  width: 22px;
+  height: 2.5px;
+  background-color: #757168;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.landpage .left .nav .nav-links {
+  position: absolute;
+  top: 0px;
+  left: -40%;
+  width: 40%;
+  height: 100vh;
+  background-color: #535179;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3rem;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.landpage .left .nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+.landpage .left .nav-links a:hover {
+  color: #D87651;
+}
+.landpage .left .nav-links li {
+  list-style-type: none;
+}
+.landpage .left .nav .nav-active {
+  left: 0%;
+  transition: all 0.5s ease;
+}
+.landpage .left .toggle .line2 {
+  opacity: 0;
+}
+.landpage .left .toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: #fff;
+}
+.landpage .left .toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  background-color: #fff;
+}
+.landpage .left .paw1 {
+  grid-row: 4/5;
+  padding-left: 4rem;
+}
+.landpage .left .paw2 {
+  grid-row: 9/10;
+  justify-self: end;
+  padding-right: 7rem;
+}
+.landpage .left .paw3 {
+  grid-row: 12/13;
+}
+.landpage .left .info {
+  grid-row: 7/8;
+  width: 372px;
+  justify-self: center;
+  padding: 20px;
+}
+.landpage .left .info h1 {
+  text-transform: uppercase;
+  color: #757168;
+  width: 275px;
+  margin-bottom: 1rem;
+  font-size: 30px;
+  line-height: 27px;
+}
+.landpage .left .info p {
+  color: #757168;
+  padding-bottom: 3rem;
+  width: 372px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.landpage .center {
+  background: url(/main-img.2ee80af6.jpg) center no-repeat;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.landpage .right-top {
+  background: url(/covering-yellow.546821dc.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.landpage .right-top .padding {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.landpage .right-top .padding .search {
+  display: flex;
+  height: 1.6rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.landpage .right-top .padding .search input:focus {
+  outline: none;
+}
+.landpage .right-top .padding .search .input-search {
+  width: 0rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+}
+.landpage .right-top .padding .search i {
+  color: #fff;
+  position: absolute;
+  top: 4.5px;
+  right: 5px;
+  cursor: pointer;
+}
+.landpage .right-top .padding .title {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 16px;
+  text-align: center;
+  justify-self: center;
+  width: 167px;
+}
+.landpage .right-top .padding .read-more {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: end;
+}
+.landpage .right-top .padding .read-more a {
+  color: #fff;
+  text-decoration: none;
+}
+.landpage .right-top .padding .read-more a:hover {
+  color: #D87651;
+}
+.landpage .right-top .padding .read-more::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
+}
+.landpage .right-top .padding .peta {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  font-size: 14px;
+  text-transform: uppercase;
+  justify-self: right;
+  align-self: end;
+}
+.landpage .right-top .padding .peta a {
+  color: #fff;
+  text-decoration: none;
+}
+.landpage .right-top .padding .peta a:hover {
+  color: #D87651;
+}
+.landpage .right-bottom {
+  background: url(/covering-orange.493e3b0d.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.landpage .right-bottom .title {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 16px;
+  width: 234px;
+}
+.landpage .right-bottom .donate {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.landpage .right-bottom .donate a {
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1rem;
+}
+.landpage .right-bottom .donate a::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 10px auto;
+}
+.landpage .right-bottom .donate a:hover {
+  color: #F1B74B;
+}
+
+.sect1 .landpage .right-top .padding .search.active i {
+  color: #F1B74B;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+.sect1 .landpage .right-top .padding .search.active .input-search {
+  width: 10rem;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+}
+
+.yellowMark {
+  background-color: #ffdd4b;
+}
+
+@media only screen and (max-width: 1222px) {
+  .landpage {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90px 2fr 0.75fr;
+  }
+  .landpage .left {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    position: relative;
+  }
+  .landpage .left .burger {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .landpage .left .info {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0px;
+    width: 0px;
+  }
+  .landpage .left .info h1 {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+  .landpage .center {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background: url(/main-tablet-phone.b800032f.jpg) center no-repeat;
+    background-size: cover;
+  }
+  .landpage .right-top {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .landpage .right-top .search i {
+    display: none;
+  }
+  .landpage .right-top .search input {
+    display: none;
+  }
+  .landpage .right-bottom {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .landpage .paw3, .landpage .paw2, .landpage .paw1, .landpage .info a, .landpage .info p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .landpage {
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 2fr 0.55fr 0.55fr;
+  }
+  .landpage .left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .landpage .left .info {
+    justify-self: start;
+    width: 0px;
+  }
+  .landpage .center {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .landpage .right-top {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .landpage .right-top .padding {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    padding: 0rem;
+  }
+  .landpage .right-top .padding .title {
+    font-size: 12px;
+    width: 200px;
+  }
+  .landpage .right-top .padding .read-more {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self: flex-start;
+    justify-self: center;
+  }
+  .landpage .right-top .padding .read-more::before {
+    display: none;
+  }
+  .landpage .right-top .padding .peta {
+    display: none;
+  }
+  .landpage .right-bottom {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+  }
+  .landpage .right-bottom .donate a::before {
+    display: none;
+  }
+  .landpage .nav .nav-links {
+    left: -50px;
+  }
+  .landpage .left .info h1 {
+    font-size: 20px;
+    width: 185px;
+    margin-bottom: 0rem;
+  }
+  .landpage .right-bottom .title {
+    font-size: 12px;
+    align-self: baseline;
+  }
+  .landpage .search {
+    display: none;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+}
+.sect2 {
+  position: relative;
+}
+
+.backgroundColor {
+  position: absolute;
+  background-color: #757168;
+  bottom: 0px;
+  width: 100%;
+  height: 26rem;
+  z-index: -1;
+}
+
+.adoptionPage {
+  grid-column: 2/3;
+}
+.adoptionPage h4 {
+  text-align: right;
+  font-size: 12px;
+  color: #757168;
+}
+.adoptionPage .adoptionInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 5rem 0px 0px;
+}
+.adoptionPage .adoptionInfo h1 {
+  text-transform: uppercase;
+  color: #757168;
+  margin-top: 5px;
+  font-size: 30px;
+  line-height: 35px;
+}
+.adoptionPage .adoptionInfo h2 {
+  font-size: 20px;
+  color: #757168;
+  margin-bottom: 5px;
+}
+.adoptionPage .adoptionInfo p {
+  color: #757168;
+  padding-bottom: 3rem;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media only screen and (max-width: 1222px) {
+  .adoptionPage .adoptionInfo {
+    grid-template-columns: repeat(1, auto);
+    text-align: center;
+  }
+}
+.adoptionPage .rescuePet {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 260px 260px;
+}
+.adoptionPage .rescuePet .img1 {
+  background: url(/rescuepet-axel.bc953049.jpg) center no-repeat;
+  background-size: cover;
+}
+.adoptionPage .rescuePet .img2 {
+  background: url(/rescuepet-pepper.1883aaea.jpg) center no-repeat;
+  background-size: cover;
+}
+.adoptionPage .rescuePet .img3 {
+  background: url(/rescuepet-kit.5b0d6b29.jpg) center no-repeat;
+  background-size: cover;
+}
+.adoptionPage .rescuePet .img4 {
+  background: url(/rescuepet-gunner-tank.fdb62db0.jpg) center no-repeat;
+  background-size: cover;
+}
+.adoptionPage .rescuePet .img {
+  width: 300px;
+  height: 100%;
+}
+.adoptionPage .rescuePet .infoPadding {
+  padding: 1rem;
+}
+.adoptionPage .rescuePet .pet1 {
+  background-color: #F1B74B;
+  color: #fff;
+  position: relative;
+}
+.adoptionPage .rescuePet .pet1::before {
+  content: url(/arrow-yellow.352a34ce.svg);
+  position: absolute;
+  left: -20px;
+  top: 100px;
+}
+.adoptionPage .rescuePet .pet2 {
+  background-color: #D87651;
+  color: #fff;
+  position: relative;
+}
+.adoptionPage .rescuePet .pet2::before {
+  content: url(/arrow-orange.fdadd13b.svg);
+  position: absolute;
+  left: -20px;
+  top: 100px;
+}
+.adoptionPage .rescuePet .pet3 {
+  background-color: #81773C;
+  color: #fff;
+  position: relative;
+}
+.adoptionPage .rescuePet .pet3::before {
+  content: url(/arrow-forestgreen.52305e7b.svg);
+  position: absolute;
+  right: -20px;
+  top: 100px;
+}
+.adoptionPage .rescuePet .pet4 {
+  background-color: #535179;
+  color: #fff;
+  position: relative;
+}
+.adoptionPage .rescuePet .pet4::before {
+  content: url(/arrow-violet.6cad49ad.svg);
+  position: absolute;
+  right: -20px;
+  top: 100px;
+}
+.adoptionPage .rescuePet .info h2 {
+  font-size: 20px;
+}
+.adoptionPage .rescuePet .info p {
+  font-size: 14px;
+}
+.adoptionPage .rescuePet .line {
+  width: 40px;
+  height: 1px;
+  margin: 25px 0px 4px;
+  background-color: #fff;
+}
+.adoptionPage .rescuePet .infoPadding {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1222px) {
+  .adoptionPage .rescuePet {
+    grid-template-columns: 1fr 1fr;
+  }
+  .adoptionPage .rescuePet .img {
+    width: 100%;
+    height: 270px;
+    background-position: center;
+  }
+  .adoptionPage .rescuePet .img1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .adoptionPage .rescuePet .pet1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .adoptionPage .rescuePet .pet3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .adoptionPage .rescuePet .img3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .adoptionPage .rescuePet .img2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .adoptionPage .rescuePet .pet2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .adoptionPage .rescuePet .img4 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .adoptionPage .rescuePet .pet4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .adoptionPage .rescuePet {
+    grid-template-columns: 1fr;
+  }
+  .adoptionPage .rescuePet .img {
+    width: 100%;
+    height: 270px;
+    background-position: center;
+  }
+  .adoptionPage .rescuePet .img1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .adoptionPage .rescuePet .pet1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .adoptionPage .rescuePet .img3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .adoptionPage .rescuePet .pet3 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .adoptionPage .rescuePet .img2 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .adoptionPage .rescuePet .pet2 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .adoptionPage .rescuePet .img4 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .adoptionPage .rescuePet .pet4 {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  .adoptionPage .rescuePet .pet1::before, .adoptionPage .rescuePet .pet2::before, .adoptionPage .rescuePet .pet3::before, .adoptionPage .rescuePet .pet4::before {
+    content: "";
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .adoptionPage .adoptionInfo h1 {
+    font-size: 20px;
+  }
+  .adoptionPage .adoptionInfo h2 {
+    font-size: 16px;
+  }
+  .adoptionPage .adoptionInfo p {
+    font-size: 14px;
+  }
+}
+.adoptionExperience {
+  grid-column: 2/3;
+}
+.adoptionExperience h4 {
+  text-align: right;
+  font-size: 12px;
+  color: #757168;
+}
+.adoptionExperience .adoptionTitle h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #757168;
+  font-size: 30px;
+  margin-top: 4rem;
+}
+.adoptionExperience .adoptionTitle .centerbtn {
+  text-align: center;
+  margin: 2rem 0px;
+}
+.adoptionExperience .adoptionTitle .viewOurStory {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .card {
+  padding: 10px;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .story {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .story img {
+  width: 100%;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .story1 {
+  background-color: #81773C;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .story2 {
+  background-color: #F1B74B;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .story3 {
+  background-color: #535179;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .story h2 {
+  color: #fff;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .story p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+}
+.adoptionExperience .adoptionTitle .viewOurStory .story h4 {
+  color: #fff;
+}
+@media only screen and (max-width: 1046px) {
+  .adoptionExperience .adoptionTitle .viewOurStory {
+    grid-template-columns: repeat(1, 60%);
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .adoptionExperience .adoptionTitle .viewOurStory {
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .adoptionExperience .adoptionTitle h1 {
+    font-size: 20px;
+  }
+}
+.sect4 {
+  position: relative;
+}
+
+.greybackground {
+  position: absolute;
+  bottom: 0px;
+  background-color: #757168;
+  width: 100%;
+  height: 26rem;
+  z-index: -100;
+}
+
+.donationsContainer {
+  grid-column: 2/3;
+  margin-top: 3rem;
+}
+.donationsContainer .donations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 4rem;
+}
+.donationsContainer .donations .donationInfo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.donationsContainer .donations .donationInfo h1 {
+  text-transform: uppercase;
+  color: #757168;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.donationsContainer .donations .donationInfo p {
+  color: #757168;
+  font-size: 16px;
+}
+.donationsContainer .donations .donationInfo .width {
+  margin-bottom: 2rem;
+}
+.donationsContainer .donations .donationForm {
+  grid-column: 2/3;
+  width: 100%;
+}
+.donationsContainer .donations .donationForm h2 {
+  color: #757168;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.donationsContainer .donations .donationForm .marginTop {
+  margin-top: 1rem;
+}
+.donationsContainer .donations .donationForm form {
+  padding: 2rem;
+  border: 0.5px #757168 solid;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+.donationsContainer .donations .donationForm form .submit {
+  margin-top: 3.5rem;
+}
+.donationsContainer .donations .donationForm .form-control label {
+  display: block;
+  color: #757168;
+}
+.donationsContainer .donations .donationForm .form-control .input {
+  width: 100%;
+  height: 1.5rem;
+  margin-bottom: 2px;
+  border-style: solid;
+}
+.donationsContainer .donations .donationForm .form-control {
+  position: relative;
+}
+.donationsContainer .donations .donationForm .form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.donationsContainer .donations .donationForm .form-control.success input {
+  border-color: #00BB27;
+}
+.donationsContainer .donations .donationForm .form-control.error input {
+  border-color: #ED4337;
+}
+.donationsContainer .donations .donationForm .form-control small {
+  color: #ED4337;
+  visibility: hidden;
+}
+.donationsContainer .donations .donationForm .form-control.error small {
+  visibility: visible;
+}
+.donationsContainer .donations .donationForm .credit {
+  display: flex;
+  justify-content: space-between;
+}
+.donationsContainer .donations .donationForm .credit input {
+  border-style: solid;
+}
+.donationsContainer .donations .donationForm .creditCardDate .monthYear select {
+  background-color: #fff;
+  border-style: solid;
+}
+.donationsContainer .donations .donationForm .monthYear {
+  display: flex;
+}
+.donationsContainer .donations .donationForm .month select {
+  margin-right: 10px;
+  width: 5rem;
+  height: 1.5rem;
+}
+.donationsContainer .donations .donationForm .year select {
+  width: 5rem;
+  height: 1.5rem;
+}
+.donationsContainer .donations .donationForm .form-control .cvv {
+  width: 5rem;
+  height: 1.5rem;
+}
+.donationsContainer .donations .contact {
+  display: flex;
+}
+.donationsContainer .donations .contact .icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.donationsContainer .donations .contact .icons i {
+  margin-bottom: 2rem;
+  font-size: 30px;
+  color: #757168;
+}
+.donationsContainer .donations .contact .contactList a {
+  color: #757168;
+  text-decoration: none;
+  font-size: 16px;
+}
+.donationsContainer .donations .contact .contactList {
+  margin-top: 5px;
+}
+.donationsContainer .donations .contact .marginBottom {
+  margin-top: 2.3rem;
+}
+@media only screen and (max-width: 1046px) {
+  .donationsContainer .donations {
+    grid-template-columns: 1fr;
+  }
+  .donationsContainer .donations .donationForm {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+.donationsContainer .footInfo {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.donationsContainer .footInfo a {
+  color: #fff;
+  text-decoration: none;
+}
+.donationsContainer .footInfo .infoList {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.donationsContainer .footInfo .infoList a:hover {
+  color: #F1B74B;
+}
+.donationsContainer .footInfo .infoList i:hover {
+  color: #F1B74B;
+}
+.donationsContainer .footInfo .infoList i {
+  margin-right: 15px;
+}
+@media only screen and (max-width: 1046px) {
+  .donationsContainer .footInfo {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .donationsContainer .donations .donationInfo h1 {
+    font-size: 20px;
+  }
+
+  .donationsContainer .donations .donationInfo p {
+    font-size: 14px;
+  }
+
+  .donationsContainer .donations .donationInfo .contact .contactList a {
+    font-size: 14px;
+    margin-top: 3px;
+  }
+
+  .donationsContainer .donations .donationInfo .contact .icons i {
+    font-size: 25px;
+  }
+
+  .donationForm {
+    padding: 0px 0rem;
+  }
+}
+
+/*# sourceMappingURL=/main.0ab05bb7.css.map */

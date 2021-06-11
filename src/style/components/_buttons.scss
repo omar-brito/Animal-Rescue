@@ -1,0 +1,32 @@
+@use '../abstracts' as a;
+
+.darkgrey-btn {
+    @extend %Soleil-Regular;
+    color: a.$white;
+    background-color: a.$darkgrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 25px 5px 25px;
+    font-size: 16px;
+}
+
+.yellowBtn {
+    @extend %Soleil-Regular;
+    color: a.$white;
+    background-color: a.$yellow;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 0px;
+    display: inline-block;
+    width: 100%;
+    border: none
+}
+
+.darkgrey-btn:hover {
+    background-color: a.$orange;
+}
+.yellowBtn:hover {
+    background-color: a.$orange; 
+}

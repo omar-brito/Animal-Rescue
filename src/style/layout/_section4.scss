@@ -1,0 +1,245 @@
+@use '../abstracts'as a;
+
+.sect4 {
+    position: relative;
+}
+
+.greybackground {
+    position: absolute;
+    bottom: 0px;
+    background-color: a.$darkgrey;
+    width: 100%;
+    height: 26rem;
+    z-index: -100;
+}
+
+.donationsContainer {
+     grid-column: 2/3;
+     margin-top: 3rem;
+
+    .donations {
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 4rem;
+
+        .donationInfo {
+            grid-column: 1/2;
+            grid-row: 1/2;
+
+            h1 {
+                @extend %Latino-URW-Regular;
+                text-transform: uppercase;
+                color: a.$darkgrey;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                @extend %Soleil-Regular;
+                color: a.$darkgrey;
+                font-size: 16px;
+            }
+
+            .width {
+                margin-bottom: 2rem;
+            }
+        }
+        .donationForm {
+            grid-column: 2/3;
+            width: 100%;
+            //padding: 0px 3rem;
+            h2 {
+                @extend %Soleil-Semibold;
+                color: a.$darkgrey;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .marginTop {
+                margin-top: 1rem;
+            }
+            form {
+                padding: 2rem;
+                border: 0.5px a.$darkgrey solid;
+                box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+                //box-shadow: 0 10px 6px -6px rgb(44, 44, 44);
+                background-color: a.$white;
+                .submit {
+                    margin-top: 3.5rem;
+                }
+            }
+            
+            .form-control label {
+                display: block;
+                @extend %Soleil-Regular;
+                color: a.$darkgrey;
+            }
+            .form-control .input {
+                width: 100%;
+                height: 1.5rem;
+                margin-bottom: 2px;
+                border-style: solid;
+            }
+            .form-control {
+                position: relative;
+            }
+            
+        .form-control input:focus {
+            outline: 0;
+            border-color: #777;
+        }
+
+        .form-control.success input {
+            border-color: a.$green;
+        }
+
+        .form-control.error input {
+            border-color: a.$red;
+        }
+        .form-control small {
+            color: a.$red;
+            visibility: hidden;
+        }
+        .form-control.error small {
+            visibility: visible;
+        }
+
+            .credit {
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .credit input {
+                border-style: solid;
+            }
+            .creditCardDate .monthYear select {
+                background-color: a.$white;
+                border-style: solid;
+            }
+            .monthYear {
+                display: flex;
+            }
+            .month select {
+                margin-right: 10px;
+                width: 5rem;
+                height: 1.5rem;
+            }
+            .year select {
+                //margin-right: 5px;
+                width: 5rem;
+                height: 1.5rem;
+            }
+            .form-control .cvv {
+            width: 5rem;
+            height: 1.5rem;
+            }
+        
+        }
+        .contact {
+            display: flex;
+
+            .icons {
+                @include a.flexColumn();
+                margin-right: 2rem;
+            }
+            .icons i {
+                margin-bottom: 2rem;
+                font-size: 30px;
+                color: a.$darkgrey;
+            }
+            .contactList a {
+                color: a.$darkgrey;
+                text-decoration: none;
+                @extend %Soleil-Regular;
+                font-size: 16px;
+            }
+            .contactList {
+                margin-top: 5px;
+            }
+            .marginBottom {
+                margin-top: 2.3rem;
+            }
+        }
+        
+        
+
+        @media only screen and (max-width: 1046px) {
+            grid-template-columns: 1fr;
+            .donationForm {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+        }
+        
+    }
+
+
+    .footInfo {
+        display: flex;
+        justify-content: space-between;
+        color: a.$white;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        @extend %Soleil-Regular;
+
+        a {
+            color: a.$white;
+            text-decoration: none;
+        }
+        .infoList {
+            @include a.flexColumn();
+            color: a.$white;
+        }
+        .infoList a:hover {
+            color: a.$yellow;
+        }
+        .infoList i:hover {
+            color: a.$yellow;
+        }
+        .infoList i {
+            margin-right: 15px;
+        }
+
+        @media only screen and (max-width: 1046px) {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(2, auto);
+            justify-content: space-around;
+
+            
+        }
+
+
+       
+
+    }
+
+}
+@media only screen and (max-width: 590px) {
+    .donationsContainer .donations .donationInfo h1 {
+         font-size: 20px;
+    }
+    .donationsContainer .donations .donationInfo p {
+        font-size: 14px;
+    }
+    .donationsContainer .donations .donationInfo .contact .contactList a {
+        font-size: 14px;
+        margin-top: 3px;
+    }
+    .donationsContainer .donations .donationInfo .contact .icons i {
+        font-size: 25px;
+        
+    }
+        .donationForm {
+            padding: 0px 0rem;
+        }
+    
+
+}
